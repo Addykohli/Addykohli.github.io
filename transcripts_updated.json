@@ -1,0 +1,821 @@
+{
+  "student": {
+    "name": "Addhyan Kohli",
+    "identifiers": {
+      "sfsu_state_id": "922258217",
+      "sfsu_campus_id": "907507487"
+    },
+    "birthdate": "06/19/XXXX"
+  },
+  "institutions": [
+    {
+      "institution_name": "San Francisco State University",
+      "transcript_kind": "Unofficial Transcript",
+      "print_date": "2025-05-09",
+      "programs": [
+        {
+          "plan": "Computer Science Major",
+          "level": "Undergraduate"
+        }
+      ],
+      "transfer_credit": {
+        "source_institution": "State University of New York College at Plattsburg",
+        "applied_toward": "Undergrad Degree-FA",
+        "course_trans_gpa": 3.374,
+        "transfer_totals": {
+          "attempted": 61.0,
+          "earned": 61.0,
+          "points": 205.8
+        }
+      },
+      "terms": [
+        {
+          "term": "FA2023",
+          "session": "Academic Regular Session",
+          "plan": "Computer Science Major",
+          "honors": [
+            "Dean's List"
+          ],
+          "courses": [
+            {
+              "subject": "CSC",
+              "number": "256",
+              "title": "MACHINE STRUCTURES",
+              "units": 3.0,
+              "earned": 3.0,
+              "grade": "B-",
+              "points": 8.1
+            },
+            {
+              "subject": "CSC",
+              "number": "300GW",
+              "title": "ETHICS, COMM, & SW DEV - GWAR",
+              "units": 3.0,
+              "earned": 3.0,
+              "grade": "B+",
+              "points": 9.9
+            },
+            {
+              "subject": "CSC",
+              "number": "317",
+              "title": "INTRO TO WEB SOFTWARE DEV",
+              "units": 3.0,
+              "earned": 3.0,
+              "grade": "A",
+              "points": 12.0
+            },
+            {
+              "subject": "MATH",
+              "number": "228",
+              "title": "CALCULUS III",
+              "units": 4.0,
+              "earned": 4.0,
+              "grade": "A",
+              "points": 16.0
+            },
+            {
+              "subject": "PHYS",
+              "number": "220",
+              "title": "GEN PHYS WITH CALC I",
+              "units": 3.0,
+              "earned": 3.0,
+              "grade": "A",
+              "points": 12.0
+            },
+            {
+              "subject": "PHYS",
+              "number": "222",
+              "title": "GEN PHYS WITH CALC I LAB",
+              "units": 1.0,
+              "earned": 1.0,
+              "grade": "A",
+              "points": 4.0
+            }
+          ],
+          "term_totals": {
+            "units_attempted": 17.0,
+            "units_earned": 17.0,
+            "gpa_units": 17.0,
+            "points": 62.0,
+            "term_gpa": 3.64
+          },
+          "cumulative_after_term": {
+            "sfsu_gpa": 3.64,
+            "combined_cum_gpa": 3.43,
+            "combined_totals_units_attempted": 78.0,
+            "combined_totals_units_earned": 78.0,
+            "combined_gpa_units": 78.0,
+            "combined_points": 267.8
+          }
+        },
+        {
+          "term": "SP2024",
+          "session": "Academic Regular Session",
+          "plan": "Computer Science Major",
+          "honors": [
+            "Dean's List"
+          ],
+          "courses": [
+            {
+              "subject": "CSC",
+              "number": "340",
+              "title": "PROGRAMMING METHODOLOGY",
+              "units": 3.0,
+              "earned": 3.0,
+              "grade": "B",
+              "points": 9.0,
+              "notes": [
+                "Grade Change"
+              ]
+            },
+            {
+              "subject": "MATH",
+              "number": "324",
+              "title": "PROB & STATS WITH COMPUTING",
+              "units": 3.0,
+              "earned": 3.0,
+              "grade": "A",
+              "points": 12.0
+            },
+            {
+              "subject": "PHIL",
+              "number": "302",
+              "title": "MEDIEVAL PHILOSOPHY",
+              "units": 3.0,
+              "earned": 3.0,
+              "grade": "CR",
+              "points": 0.0
+            },
+            {
+              "subject": "PHYS",
+              "number": "230",
+              "title": "GEN PHYS WITH CALC II",
+              "units": 3.0,
+              "earned": 3.0,
+              "grade": "A-",
+              "points": 11.1,
+              "notes": [
+                "Grade Change"
+              ]
+            },
+            {
+              "subject": "PHYS",
+              "number": "232",
+              "title": "GEN PHYS WITH CALC II LAB",
+              "units": 1.0,
+              "earned": 1.0,
+              "grade": "A",
+              "points": 4.0
+            },
+            {
+              "subject": "PLSI",
+              "number": "200",
+              "title": "INTRO TO AMERICAN POLITICS",
+              "units": 3.0,
+              "earned": 3.0,
+              "grade": "A",
+              "points": 12.0
+            },
+            {
+              "subject": "PSY",
+              "number": "111",
+              "title": "LOGIC & PSY CRITICAL THINKING",
+              "units": 3.0,
+              "earned": 3.0,
+              "grade": "CR",
+              "points": 0.0
+            }
+          ],
+          "term_totals": {
+            "units_attempted": 19.0,
+            "units_earned": 19.0,
+            "gpa_units": 13.0,
+            "points": 48.1,
+            "term_gpa": 3.7
+          },
+          "cumulative_after_term": {
+            "sfsu_gpa": 3.67,
+            "sfsu_totals_units_attempted": 36.0,
+            "sfsu_totals_units_earned": 36.0,
+            "sfsu_gpa_units": 30.0,
+            "sfsu_points": 110.1,
+            "combined_cum_gpa": 3.47,
+            "combined_totals_units_attempted": 97.0,
+            "combined_totals_units_earned": 97.0,
+            "combined_gpa_units": 91.0,
+            "combined_points": 315.9
+          }
+        },
+        {
+          "term": "SU2024",
+          "sessions": [
+            {
+              "session": "Summer Regular Session 3",
+              "courses": [
+                {
+                  "subject": "ANTH",
+                  "number": "110",
+                  "title": "INTRODUCTION TO ARCHAEOLOGY",
+                  "units": 3.0,
+                  "earned": 3.0,
+                  "grade": "A",
+                  "points": 12.0
+                },
+                {
+                  "subject": "PH",
+                  "number": "315",
+                  "title": "DRUGS AND SOCIETY",
+                  "units": 3.0,
+                  "earned": 3.0,
+                  "grade": "C+",
+                  "points": 6.9
+                }
+              ]
+            },
+            {
+              "session": "Summer Regular Session 4",
+              "courses": [
+                {
+                  "subject": "CSC",
+                  "number": "413",
+                  "title": "SOFTWARE DEVELOPMENT",
+                  "units": 3.0,
+                  "earned": 3.0,
+                  "grade": "A-",
+                  "points": 11.1
+                },
+                {
+                  "subject": "CSC",
+                  "number": "415",
+                  "title": "OPERATING SYSTEM PRINCIPLES",
+                  "units": 3.0,
+                  "earned": 3.0,
+                  "grade": "D",
+                  "points": 3.0
+                }
+              ]
+            }
+          ],
+          "term_totals": {
+            "units_attempted": 12.0,
+            "units_earned": 12.0,
+            "gpa_units": 12.0,
+            "points": 33.0,
+            "term_gpa": 2.75
+          },
+          "cumulative_after_term": {
+            "sfsu_gpa": 3.4,
+            "sfsu_totals_units_attempted": 48.0,
+            "sfsu_totals_units_earned": 48.0,
+            "sfsu_gpa_units": 42.0,
+            "sfsu_points": 143.1,
+            "combined_cum_gpa": 3.38,
+            "combined_totals_units_attempted": 109.0,
+            "combined_totals_units_earned": 109.0,
+            "combined_gpa_units": 103.0,
+            "combined_points": 348.9
+          }
+        },
+        {
+          "term": "FA2024",
+          "session": "Academic Regular Session",
+          "plan": "Computer Science Major",
+          "courses": [
+            {
+              "subject": "BIOL",
+              "number": "100",
+              "title": "HUMAN BIOLOGY",
+              "units": 3.0,
+              "earned": 0.0,
+              "grade": "NC",
+              "points": 0.0
+            },
+            {
+              "subject": "CSC",
+              "number": "510",
+              "title": "ANALYSIS OF ALGORITHMS I",
+              "units": 3.0,
+              "earned": 3.0,
+              "grade": "C-",
+              "points": 5.1
+            },
+            {
+              "subject": "CSC",
+              "number": "667",
+              "title": "INTERNET APP DESIGN & DEV",
+              "units": 3.0,
+              "earned": 3.0,
+              "grade": "D",
+              "points": 3.0
+            },
+            {
+              "subject": "CSC",
+              "number": "675",
+              "title": "INTRO TO DATABASE SYSTEMS",
+              "units": 3.0,
+              "earned": 3.0,
+              "grade": "A",
+              "points": 12.0
+            },
+            {
+              "subject": "PLSI",
+              "number": "100",
+              "title": "UNDERSTANDING POLITICS",
+              "units": 3.0,
+              "earned": 3.0,
+              "grade": "A-",
+              "points": 11.1,
+              "notes": [
+                "Grade Change"
+              ]
+            }
+          ],
+          "term_totals": {
+            "units_attempted": 15.0,
+            "units_earned": 12.0,
+            "gpa_units": 12.0,
+            "points": 31.2,
+            "term_gpa": 2.6
+          },
+          "cumulative_after_term": {
+            "sfsu_gpa": 3.22,
+            "sfsu_totals_units_attempted": 63.0,
+            "sfsu_totals_units_earned": 60.0,
+            "sfsu_gpa_units": 54.0,
+            "sfsu_points": 174.3,
+            "combined_cum_gpa": 3.3,
+            "combined_totals_units_attempted": 124.0,
+            "combined_totals_units_earned": 121.0,
+            "combined_gpa_units": 115.0,
+            "combined_points": 380.1
+          }
+        },
+        {
+          "term": "SP2025",
+          "session": "Academic Regular Session",
+          "plan": "Computer Science Major",
+          "status": "Completed",
+          "courses": [
+            {
+              "subject": "ANTH",
+              "number": "100",
+              "title": "INTRO BIOLOGICAL ANTHROPOLOGY",
+              "units": 3.0,
+              "earned": 3.0,
+              "grade": "CR"
+            },
+            {
+              "subject": "ERTH",
+              "number": "310",
+              "title": "THE VIOLENT EARTH",
+              "units": 3.0,
+              "earned": 0.0,
+              "grade": "NC"
+            },
+            {
+              "subject": "JOUR",
+              "number": "205",
+              "title": "SOCIAL IMPACT OF JOURNALISM",
+              "units": 3.0,
+              "earned": 3.0,
+              "grade": "CR"
+            },
+            {
+              "subject": "MATH",
+              "number": "400",
+              "title": "NUMERICAL ANALYSIS",
+              "units": 3.0,
+              "earned": 3.0,
+              "grade": "A",
+              "points": 12.0
+            },
+            {
+              "subject": "MLL",
+              "number": "150",
+              "title": "DON QUIXOTE & SUPERHEROES",
+              "units": 3.0,
+              "earned": 3.0,
+              "grade": "CR"
+            }
+          ],
+          "term_totals": {
+            "units_attempted": 15.0,
+            "units_earned": 12.0,
+            "gpa_units": 3.0,
+            "points": 12.0,
+            "term_gpa": 4.0
+          }
+        },
+        {
+          "term": "FA2025",
+          "session": "Academic Regular Session",
+          "plans": [
+            "Computer Science Major",
+            "Mathematics Minor"
+          ],
+          "courses": [
+            {
+              "subject": "CSC",
+              "number": "648",
+              "title": "SOFTWARE ENGINEERING",
+              "units": 3.0,
+              "earned": 3.0,
+              "grade": "B+",
+              "points": 9.9
+            },
+            {
+              "subject": "ERTH",
+              "number": "310",
+              "title": "THE VIOLENT EARTH",
+              "units": 3.0,
+              "earned": 3.0,
+              "grade": "CR"
+            },
+            {
+              "subject": "HIST",
+              "number": "121",
+              "title": "HIST OF US SINCE RECONSTRUCTION",
+              "units": 3.0,
+              "earned": 3.0,
+              "grade": "CR"
+            },
+            {
+              "subject": "MATH",
+              "number": "495",
+              "title": "WAVELET & FRAMES APPLICATIONS",
+              "units": 3.0,
+              "earned": 3.0,
+              "grade": "A",
+              "points": 12.0
+            }
+          ],
+          "term_totals": {
+            "units_attempted": 12.0,
+            "units_earned": 12.0,
+            "gpa_units": 6.0,
+            "points": 21.9,
+            "term_gpa": 3.65
+          }
+        }
+      ],
+      "career_totals": {
+        "sfsu_cum_gpa": 3.3,
+        "sfsu_totals": {
+          "units_attempted": 90.0,
+          "units_earned": 84.0,
+          "gpa_units": 63.0,
+          "points": 208.2
+        },
+        "combined_cum_gpa": 3.33,
+        "combined_totals": {
+          "units_attempted": 151.0,
+          "units_earned": 145.0,
+          "gpa_units": 124.0,
+          "points": 414.0
+        }
+      }
+    },
+    {
+      "institution_name": "State University of New York College at Plattsburgh",
+      "transcript_kind": "Student Academic Transcript (Unofficial Web Version)",
+      "as_of": "2023-02-03T07:53:00",
+      "programs": [
+        {
+          "major": "Computer Science BS",
+          "department": "Computer Science",
+          "degree_sought": "Bachelor of Science"
+        },
+        {
+          "minor": "Mathematics Minor"
+        }
+      ],
+      "terms": [
+        {
+          "term": "Fall 2021",
+          "academic_standing": "Good Standing",
+          "courses": [
+            {
+              "subject": "CMM",
+              "number": "101",
+              "level": "U",
+              "title": "Intro to Public Speaking",
+              "grade": "C-",
+              "credit_hours": 3.0,
+              "quality_points": 5.1
+            },
+            {
+              "subject": "CSC",
+              "number": "119",
+              "level": "U",
+              "title": "Introduction to UNIX/Linux",
+              "grade": "C",
+              "credit_hours": 1.0,
+              "quality_points": 2.0
+            },
+            {
+              "subject": "CSC",
+              "number": "152",
+              "level": "U",
+              "title": "Computer Security and Society",
+              "grade": "A",
+              "credit_hours": 3.0,
+              "quality_points": 12.0
+            },
+            {
+              "subject": "ENG",
+              "number": "101",
+              "level": "U",
+              "title": "College Writing II",
+              "grade": "C",
+              "credit_hours": 3.0,
+              "quality_points": 6.0
+            },
+            {
+              "subject": "FRX",
+              "number": "101",
+              "level": "U",
+              "title": "Frst-Yr Stdnt Transition Sem",
+              "grade": "C",
+              "credit_hours": 1.0,
+              "quality_points": 2.0
+            },
+            {
+              "subject": "MAT",
+              "number": "102",
+              "level": "U",
+              "title": "Precalculus",
+              "grade": "A",
+              "credit_hours": 3.0,
+              "quality_points": 12.0
+            }
+          ],
+          "term_totals": {
+            "attempt_hours": 14.0,
+            "passed_hours": 14.0,
+            "earned_hours": 14.0,
+            "gpa_hours": 14.0,
+            "quality_points": 39.1,
+            "gpa": 2.79
+          },
+          "cumulative_after_term": {
+            "attempt_hours": 14.0,
+            "passed_hours": 14.0,
+            "earned_hours": 14.0,
+            "gpa_hours": 14.0,
+            "quality_points": 39.1,
+            "gpa": 2.79
+          }
+        },
+        {
+          "term": "Spring 2022",
+          "academic_standing": "Good Standing",
+          "courses": [
+            {
+              "subject": "CFS",
+              "number": "1889",
+              "level": "U",
+              "title": "So you wanna be a GOAT?",
+              "grade": "C-",
+              "credit_hours": 3.0,
+              "quality_points": 5.1
+            },
+            {
+              "subject": "CSC",
+              "number": "217",
+              "level": "U",
+              "title": "Discrete Math & Computer Appl",
+              "grade": "A",
+              "credit_hours": 3.0,
+              "quality_points": 12.0
+            },
+            {
+              "subject": "CSC",
+              "number": "221",
+              "level": "U",
+              "title": "Intro to Programming",
+              "grade": "RE",
+              "credit_hours": 3.0,
+              "quality_points": 0.0,
+              "notes": [
+                "Repeat/Replace indicator shown as 'I' in R column"
+              ]
+            },
+            {
+              "subject": "CSC",
+              "number": "231",
+              "level": "U",
+              "title": "Programming Lab",
+              "grade": "RC",
+              "credit_hours": 1.0,
+              "quality_points": 0.0,
+              "notes": [
+                "Repeat/Replace indicator shown as 'I' in R column"
+              ]
+            },
+            {
+              "subject": "MAT",
+              "number": "104",
+              "level": "U",
+              "title": "Trigonometry",
+              "grade": "A",
+              "credit_hours": 1.0,
+              "quality_points": 4.0
+            },
+            {
+              "subject": "MAT",
+              "number": "224",
+              "level": "U",
+              "title": "Calculus I",
+              "grade": "A",
+              "credit_hours": 4.0,
+              "quality_points": 16.0
+            }
+          ],
+          "term_totals": {
+            "attempt_hours": 15.0,
+            "passed_hours": 11.0,
+            "earned_hours": 11.0,
+            "gpa_hours": 11.0,
+            "quality_points": 37.1,
+            "gpa": 3.37
+          },
+          "cumulative_after_term": {
+            "attempt_hours": 29.0,
+            "passed_hours": 25.0,
+            "earned_hours": 25.0,
+            "gpa_hours": 25.0,
+            "quality_points": 76.2,
+            "gpa": 3.04
+          }
+        },
+        {
+          "term": "Fall 2022",
+          "academic_standing": "Good Standing",
+          "courses": [
+            {
+              "subject": "ART",
+              "number": "104",
+              "level": "U",
+              "title": "Basic Design: 2-D",
+              "grade": "B",
+              "credit_hours": 3.0,
+              "quality_points": 9.0
+            },
+            {
+              "subject": "CSC",
+              "number": "221",
+              "level": "U",
+              "title": "Intro to Programming",
+              "grade": "B",
+              "credit_hours": 3.0,
+              "quality_points": 9.0,
+              "notes": [
+                "Repeat/Replace indicator shown as 'I' in R column"
+              ]
+            },
+            {
+              "subject": "CSC",
+              "number": "223",
+              "level": "U",
+              "title": "Data Structures and Algorithms",
+              "grade": "B",
+              "credit_hours": 3.0,
+              "quality_points": 9.0
+            },
+            {
+              "subject": "CSC",
+              "number": "231",
+              "level": "U",
+              "title": "Programming Lab",
+              "grade": "A",
+              "credit_hours": 1.0,
+              "quality_points": 4.0,
+              "notes": [
+                "Repeat/Replace indicator shown as 'I' in R column"
+              ]
+            },
+            {
+              "subject": "CSC",
+              "number": "233",
+              "level": "U",
+              "title": "Data Structures Lab",
+              "grade": "A-",
+              "credit_hours": 1.0,
+              "quality_points": 3.7
+            },
+            {
+              "subject": "MAT",
+              "number": "202",
+              "level": "U",
+              "title": "Linear Algebra I",
+              "grade": "B+",
+              "credit_hours": 3.0,
+              "quality_points": 9.9
+            },
+            {
+              "subject": "MAT",
+              "number": "225",
+              "level": "U",
+              "title": "Calculus II",
+              "grade": "A",
+              "credit_hours": 4.0,
+              "quality_points": 16.0
+            }
+          ],
+          "term_totals": {
+            "attempt_hours": 18.0,
+            "passed_hours": 18.0,
+            "earned_hours": 18.0,
+            "gpa_hours": 18.0,
+            "quality_points": 60.6,
+            "gpa": 3.36
+          },
+          "cumulative_after_term": {
+            "attempt_hours": 47.0,
+            "passed_hours": 43.0,
+            "earned_hours": 43.0,
+            "gpa_hours": 43.0,
+            "quality_points": 136.8,
+            "gpa": 3.18
+          }
+        },
+        {
+          "term": "Spring 2023",
+          "status": "Course(s) in progress",
+          "major": "Computer Science BS",
+          "courses": [
+            {
+              "subject": "CSC",
+              "number": "318",
+              "level": "U",
+              "title": "Discrete Math Comp Apps II",
+              "credit_hours": 3.0
+            },
+            {
+              "subject": "CSC",
+              "number": "336",
+              "level": "U",
+              "title": "Software Engineering I",
+              "credit_hours": 3.0
+            },
+            {
+              "subject": "CSC",
+              "number": "345",
+              "level": "U",
+              "title": "Artificial Intelligence",
+              "credit_hours": 3.0
+            },
+            {
+              "subject": "CSC",
+              "number": "357",
+              "level": "U",
+              "title": "Computer Networks",
+              "credit_hours": 3.0
+            },
+            {
+              "subject": "CSC",
+              "number": "485",
+              "level": "U",
+              "title": "Machine Learning for Robotics",
+              "credit_hours": 3.0
+            },
+            {
+              "subject": "MAT",
+              "number": "231",
+              "level": "U",
+              "title": "Sets,Functns&Relations",
+              "credit_hours": 3.0
+            }
+          ]
+        }
+      ],
+      "transcript_totals": {
+        "level": "Undergraduate",
+        "total_institution": {
+          "attempt_hours": 47.0,
+          "passed_hours": 43.0,
+          "earned_hours": 43.0,
+          "gpa_hours": 43.0,
+          "quality_points": 136.8,
+          "gpa": 3.18
+        },
+        "total_transfer": {
+          "attempt_hours": 0.0,
+          "passed_hours": 0.0,
+          "earned_hours": 0.0,
+          "gpa_hours": 0.0,
+          "quality_points": 0.0,
+          "gpa": 0.0
+        },
+        "overall": {
+          "attempt_hours": 47.0,
+          "passed_hours": 43.0,
+          "earned_hours": 43.0,
+          "gpa_hours": 43.0,
+          "quality_points": 136.8,
+          "gpa": 3.18
+        }
+      }
+    }
+  ]
+}

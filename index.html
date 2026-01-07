@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Addhyan Kohli - Portfolio</title>
+    <link rel="icon" type="image/png" href="public/icon.png">
+    <meta name="description"
+        content="Personal portfolio of Addhyan Kohli - Software Developer, showcasing projects, skills, and experience.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="header-content">
+            <div class="logo-section">
+                <img src="public/icon.png" alt="Addhyan Kohli Icon" class="logo-icon">
+                <h1 class="logo-text">Addhyan Kohli</h1>
+            </div>
+
+            <div class="header-actions">
+                <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <button class="mobile-menu-toggle" id="mobileMenuToggle" aria-label="Toggle menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation Sidebar -->
+    <nav class="sidebar" id="sidebar">
+        <div class="nav-links">
+            <a href="#home" class="nav-link active" data-section="home">
+                <i class="fas fa-home"></i>
+                <span>Home</span>
+            </a>
+            <a href="#about" class="nav-link" data-section="about">
+                <i class="fas fa-user"></i>
+                <span>About</span>
+            </a>
+            <a href="#projects" class="nav-link" data-section="projects">
+                <i class="fas fa-code"></i>
+                <span>Projects</span>
+            </a>
+            <a href="#skills" class="nav-link" data-section="skills">
+                <i class="fas fa-brain"></i>
+                <span>Skills</span>
+            </a>
+            <a href="#education" class="nav-link" data-section="education">
+                <i class="fas fa-university"></i>
+                <span>Education</span>
+            </a>
+            <a href="#courses" class="nav-link" data-section="courses">
+                <i class="fas fa-graduation-cap"></i>
+                <span>Courses</span>
+            </a>
+            <a href="#contact" class="nav-link" data-section="contact">
+                <i class="fas fa-envelope"></i>
+                <span>Contact</span>
+            </a>
+        </div>
+
+        <div class="social-links">
+            <a href="https://github.com/Addykohli" target="_blank" rel="noopener noreferrer" class="social-link"
+                aria-label="GitHub">
+                <i class="fab fa-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/addhyan-kohli-4250a7276" target="_blank" rel="noopener noreferrer"
+                class="social-link" aria-label="LinkedIn">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://mail.google.com/mail/?view=cm&fs=1&to=addhyan@gmail.com" target="_blank"
+                rel="noopener noreferrer" class="social-link" aria-label="Email">
+                <i class="fas fa-envelope"></i>
+            </a>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="main-content" id="mainContent">
+        <!-- Home Section -->
+        <section class="section active" id="home">
+            <div class="hero-section">
+                <div class="hero-content">
+                    <h2 class="hero-subtitle">Hello, I'm</h2>
+                    <h1 class="hero-title">Addhyan Kohli</h1>
+                    <p class="hero-description">
+                        Full-time aspirant in <strong>UI/UX, AI/ML, & Full Stack Dev</strong>.<br>
+                        <i class="fas fa-map-marker-alt"></i> Based in <strong>Bay Area, CA</strong> & <strong>New
+                            York</strong>.<br>
+                        Open to custom development requests.
+                    </p>
+                    <div class="hero-buttons">
+                        <button class="btn btn-primary" id="viewResumeBtn">
+                            <i class="fas fa-file-pdf"></i>
+                            View Resume
+                        </button>
+                        <a href="#contact" class="btn btn-secondary">
+                            <i class="fas fa-paper-plane"></i>
+                            Get In Touch
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <a href="#projects" class="floating-card card-1" title="View Projects">
+                        <i class="fas fa-code"></i>
+                    </a>
+                    <a href="#education" class="floating-card card-2" title="Education">
+                        <i class="fas fa-graduation-cap"></i>
+                    </a>
+                    <a href="#skills" class="floating-card card-3" title="Skills">
+                        <i class="fas fa-brain"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section class="section" id="about">
+            <div class="section-header">
+                <h2 class="section-title">About Me</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="about-content">
+                <div class="about-container">
+                    <div class="about-headshot-wrapper">
+                        <img src="public/headshot.png" alt="Addhyan Kohli" class="about-headshot">
+                    </div>
+                    <div class="about-text">
+                        <p class="about-paragraph">
+                            I'm a passionate software developer with a keen interest in building innovative solutions
+                            and solving complex problems. With expertise in various programming languages and
+                            frameworks,
+                            I strive to create efficient, scalable, and user-friendly applications.
+                        </p>
+                        <p class="about-paragraph">
+                            My journey in technology has been driven by curiosity and a commitment to continuous
+                            learning.
+                            I enjoy tackling challenges, collaborating with teams, and bringing ideas to life through
+                            code.
+                        </p>
+                        <div class="about-stats">
+                            <div class="stat-card">
+                                <i class="fas fa-project-diagram"></i>
+                                <h3>Projects</h3>
+                                <p>Multiple innovative solutions</p>
+                            </div>
+                            <div class="stat-card">
+                                <i class="fas fa-award"></i>
+                                <h3>Courses</h3>
+                                <p>Continuous learning</p>
+                            </div>
+                            <div class="stat-card">
+                                <i class="fas fa-code-branch"></i>
+                                <h3>Experience</h3>
+                                <p>Growing expertise</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section class="section" id="projects">
+            <div class="section-header">
+                <h2 class="section-title">Projects</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="projects-grid">
+                <!-- Gator-Tutor-Website -->
+                <div class="project-card">
+                    <div class="project-icon">
+                        <i class="fas fa-chalkboard-teacher"></i>
+                    </div>
+                    <h3 class="project-title">Gator Tutor Website</h3>
+                    <p class="project-description">
+                        A dedicated peer-to-peer tutoring marketplace built for the SFSU community. Connects students
+                        for academic success.
+                    </p>
+                    <div class="project-tags">
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">Full Stack</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="http://18.220.232.53/" target="_blank" class="project-link">
+                            <i class="fas fa-external-link-alt"></i> Live Demo
+                        </a>
+                        <a href="https://github.com/Addykohli/Gator-Tutor-Website" target="_blank" class="project-link">
+                            <i class="fab fa-github"></i> ViewCode
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Custom Monopoly Live -->
+                <div class="project-card">
+                    <div class="project-icon">
+                        <i class="fas fa-dice"></i>
+                    </div>
+                    <h3 class="project-title">Custom Monopoly Live</h3>
+                    <p class="project-description">
+                        An interactive multiplayer game experience built with React and Node.js.
+                    </p>
+                    <div class="project-tags">
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">React</span>
+                        <span class="tag">Node.js</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="http://3.137.155.134/" target="_blank" class="project-link">
+                            <i class="fas fa-external-link-alt"></i> Live Demo
+                        </a>
+                        <a href="https://github.com/Addykohli/React-NodeJS-game" target="_blank" class="project-link">
+                            <i class="fab fa-github"></i> View Code
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Ai-Virtual-Rage-Room -->
+                <div class="project-card">
+                    <div class="project-icon">
+                        <i class="fas fa-vr-cardboard"></i>
+                    </div>
+                    <h3 class="project-title">AI Virtual Rage Room</h3>
+                    <p class="project-description">
+                        A virtual environment for stress relief and rage simulation using AI technologies.
+                    </p>
+                    <div class="project-tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">AI</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/Addykohli/Ai-Virtual-Rage-Room" target="_blank"
+                            class="project-link">
+                            <i class="fab fa-github"></i> View Code
+                        </a>
+                    </div>
+                </div>
+
+                <!-- TankGame_java -->
+                <div class="project-card">
+                    <div class="project-icon">
+                        <i class="fas fa-gamepad"></i>
+                    </div>
+                    <h3 class="project-title">Tank Game</h3>
+                    <p class="project-description">
+                        2 player Tank game developed in Java. Battle it out with your friend in this classic arcade
+                        shooter.
+                    </p>
+                    <div class="project-tags">
+                        <span class="tag">Java</span>
+                        <span class="tag">Game Dev</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/Addykohli/TankGame_java" target="_blank" class="project-link">
+                            <i class="fab fa-github"></i> View Code
+                        </a>
+                    </div>
+                </div>
+
+                <!-- TowerDefence -->
+                <div class="project-card">
+                    <div class="project-icon">
+                        <i class="fas fa-chess-rook"></i>
+                    </div>
+                    <h3 class="project-title">Tower Defence</h3>
+                    <p class="project-description">
+                        A strategic tower defense game implemented in Python. Defend your base against waves of enemies.
+                    </p>
+                    <div class="project-tags">
+                        <span class="tag">Python</span>
+                        <span class="tag">PyGame</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/Addykohli/TowerDefence" target="_blank" class="project-link">
+                            <i class="fab fa-github"></i> View Code
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Simple_Polynomial_classifier -->
+                <div class="project-card">
+                    <div class="project-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3 class="project-title">Polynomial Classifier</h3>
+                    <p class="project-description">
+                        A simple polynomial classifier implemented in Jupyter Notebook for data analysis and
+                        classification tasks.
+                    </p>
+                    <div class="project-tags">
+                        <span class="tag">Jupyter</span>
+                        <span class="tag">ML</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/Addykohli/Simple_Polynomial_classifier" target="_blank"
+                            class="project-link">
+                            <i class="fab fa-github"></i> View Code
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Digit_Classifier -->
+                <div class="project-card">
+                    <div class="project-icon">
+                        <i class="fas fa-fingerprint"></i>
+                    </div>
+                    <h3 class="project-title">Digit Classifier</h3>
+                    <p class="project-description">
+                        Handwritten digit recognition model using machine learning algorithms in Jupyter Notebook.
+                    </p>
+                    <div class="project-tags">
+                        <span class="tag">Jupyter</span>
+                        <span class="tag">Deep Learning</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/Addykohli/Digit_Classifier" target="_blank" class="project-link">
+                            <i class="fab fa-github"></i> View Code
+                        </a>
+                    </div>
+                </div>
+
+                <!-- AddysWebsite -->
+                <div class="project-card">
+                    <div class="project-icon">
+                        <i class="fas fa-globe"></i>
+                    </div>
+                    <h3 class="project-title">Portfolio Website</h3>
+                    <p class="project-description">
+                        This personal portfolio website, built with HTML/CSS to showcase my projects and skills.
+                    </p>
+                    <div class="project-tags">
+                        <span class="tag">HTML/CSS</span>
+                        <span class="tag">Portfolio</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="https://github.com/Addykohli/AddysWebsite" target="_blank" class="project-link">
+                            <i class="fab fa-github"></i> View Code
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section class="section" id="skills">
+            <div class="section-header">
+                <h2 class="section-title">Skills & Expertise</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="skills-container">
+                <!-- Machine Learning & AI -->
+                <div class="skill-category">
+                    <h3 class="category-title">
+                        <i class="fas fa-brain"></i>
+                        Machine Learning & AI
+                    </h3>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <span class="skill-name">Python (Pandas, NumPy)</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="--progress: 95%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">PyTorch & TensorFlow</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="--progress: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Scikit-learn</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="--progress: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Google Gemini API</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="--progress: 88%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Jupyter & Matplotlib</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="--progress: 92%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Programming Languages -->
+                <div class="skill-category">
+                    <h3 class="category-title">
+                        <i class="fas fa-code"></i>
+                        Programming Languages
+                    </h3>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <span class="skill-name">Java</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="--progress: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">C / C++</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="--progress: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">SQL</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="--progress: 88%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">R & MATLAB</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="--progress: 80%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">HTML / CSS</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="--progress: 92%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Frameworks & Tools -->
+                <div class="skill-category">
+                    <h3 class="category-title">
+                        <i class="fas fa-tools"></i>
+                        Frameworks & Tools
+                    </h3>
+                    <div class="skill-list">
+                        <div class="skill-item">
+                            <span class="skill-name">React</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="--progress: 85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Node.js</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="--progress: 82%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">MySQL</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="--progress: 88%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Git</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="--progress: 90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Docker</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="--progress: 75%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section class="section" id="education">
+            <div class="section-header">
+                <h2 class="section-title">Education</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-header">
+                        <i class="fas fa-graduation-cap"></i>
+                        <h3 class="project-title">San Francisco State University</h3>
+                    </div>
+                    <p class="project-description">
+                        <strong>Bachelor of Science in Computer Science</strong><br>
+                        <strong>Minor in Mathematics</strong><br>
+                        2023 - Present<br>
+                        Dean's List Honoree x3
+                    </p>
+                </div>
+                <div class="project-card">
+                    <div class="project-header">
+                        <i class="fas fa-university"></i>
+                        <h3 class="project-title">SUNY Plattsburgh</h3>
+                    </div>
+                    <p class="project-description">
+                        <strong>Bachelor of Science in Computer Science</strong><br>
+                        2021 - 2023<br>
+                        Dean's List Honoree x1
+                        <br>
+                        Transferred to SFSU
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Courses Section -->
+        <section class="section" id="courses">
+            <div class="section-header">
+                <h2 class="section-title">Relevant Coursework</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="courses-grid">
+                <!-- Advanced CS -->
+                <div class="course-card">
+                    <div class="course-header">
+                        <i class="fas fa-code"></i>
+                        <h3>Advanced Computing</h3>
+                    </div>
+                    <div class="course-topics">
+                        <span class="topic">Analysis of Algorithms</span>
+                        <span class="topic">Operating System Principles</span>
+                        <span class="topic">Machine Learning for Robotics</span>
+                        <span class="topic">Artificial Intelligence</span>
+                        <span class="topic">Computer Security</span>
+                        <span class="topic">Computer Networks</span>
+                        <span class="topic">Numerical Analysis</span>
+                        <span class="topic">Wavelet & Frames Applications</span>
+                        <span class="topic">Machine Structures</span>
+                    </div>
+                </div>
+
+                <!-- Software Engineering -->
+                <div class="course-card">
+                    <div class="course-header">
+                        <i class="fas fa-layer-group"></i>
+                        <h3>Software Engineering</h3>
+                    </div>
+                    <div class="course-topics">
+                        <span class="topic">Software Engineering I & II</span>
+                        <span class="topic">Software Development</span>
+                        <span class="topic">Internet App Design & Dev</span>
+                        <span class="topic">Web Software Development</span>
+                        <span class="topic">Database Systems</span>
+                        <span class="topic">Data Structures & Algorithms</span>
+                        <span class="topic">Programming Methodology</span>
+                        <span class="topic">Unix/Linux</span>
+                    </div>
+                </div>
+
+                <!-- Foundations -->
+                <div class="course-card">
+                    <div class="course-header">
+                        <i class="fas fa-square-root-alt"></i>
+                        <h3>Math & Foundations</h3>
+                    </div>
+                    <div class="course-topics">
+                        <span class="topic">Calculus I, II, III</span>
+                        <span class="topic">Linear Algebra</span>
+                        <span class="topic">Discrete Math</span>
+                        <span class="topic">Probability & Stats</span>
+                        <span class="topic">Calculus for Physics I & II</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="section" id="contact">
+            <div class="section-header">
+                <h2 class="section-title">Get In Touch</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <p class="contact-subtitle">
+                        I'm always open to discussing new projects, creative ideas, or opportunities to be part of your
+                        vision.
+                    </p>
+
+                    <div class="contact-methods">
+                        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=addhyan@gmail.com" target="_blank"
+                            rel="noopener noreferrer" class="contact-method">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h3>Email</h3>
+                                <p>addhyan@gmail.com</p>
+                            </div>
+                        </a>
+
+                        <a href="https://www.linkedin.com/in/addhyan-kohli-4250a7276" target="_blank"
+                            rel="noopener noreferrer" class="contact-method">
+                            <div class="contact-icon">
+                                <i class="fab fa-linkedin"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h3>LinkedIn</h3>
+                                <p>Connect with me</p>
+                            </div>
+                        </a>
+
+                        <a href="https://github.com/Addykohli" target="_blank" rel="noopener noreferrer"
+                            class="contact-method">
+                            <div class="contact-icon">
+                                <i class="fab fa-github"></i>
+                            </div>
+                            <div class="contact-details">
+                                <h3>GitHub</h3>
+                                <p>Check out my code</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Resume Modal -->
+    <div class="modal" id="resumeModal">
+        <div class="modal-overlay" id="modalOverlay"></div>
+        <div class="modal-content">
+            <button class="modal-close" id="modalClose" aria-label="Close modal">
+                <i class="fas fa-times"></i>
+            </button>
+            <div class="modal-header">
+                <h2>Resume</h2>
+                <a href="public/Resume.pdf" download class="btn btn-primary btn-sm">
+                    <i class="fas fa-download"></i>
+                    Download PDF
+                </a>
+            </div>
+            <div class="modal-body">
+                <iframe src="public/Resume.pdf" class="resume-viewer"></iframe>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

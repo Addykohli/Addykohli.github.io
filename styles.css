@@ -1,0 +1,808 @@
+/* ============================================
+   ROOT VARIABLES & DESIGN TOKENS
+   ============================================ */
+:root {
+    /* Color Palette - Reddit-inspired Clean Look */
+    --primary-hue: 215;
+    /* Reddit Blue-ish */
+    --accent-hue: 12;
+    /* Reddit Orange-ish */
+
+    --background: #ffffff;
+    --surface: #ffffff;
+    --surface-hover: #f6f7f8;
+    --surface-active: #e3edf6;
+    --border: #eaedef;
+    /* Thin, crisp border color */
+
+    --text-primary: #1c1c1c;
+    --text-secondary: #576f76;
+    --text-tertiary: #878a8c;
+
+    --primary: #0045ac;
+    --primary-hover: #003584;
+    --primary-light: #e3edf6;
+
+    --accent: #ff4500;
+    /* Reddit Orange */
+
+    /* Layout Dimensions - Compact */
+    --header-height: 48px;
+    /* Reduced from clamp */
+    --sidebar-width: 220px;
+    /* Reduced fixed width */
+    --sidebar-collapsed: 60px;
+
+    /* Spacing - Tighter */
+    --space-xs: 4px;
+    --space-sm: 8px;
+    --space-md: 12px;
+    --space-lg: 16px;
+    --space-xl: 24px;
+    --space-2xl: 32px;
+
+    /* Typography */
+    --font-xs: 11px;
+    --font-sm: 12px;
+    --font-base: 14px;
+    --font-lg: 16px;
+    --font-xl: 20px;
+    --font-2xl: 24px;
+
+    /* Borders & Radius */
+    --radius-sm: 4px;
+    --radius-md: 8px;
+    --radius-lg: 12px;
+    --radius-full: 9999px;
+
+    /* Shadows - Subtle */
+    --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
+
+    /* Transitions */
+    --transition-fast: 150ms ease;
+}
+
+/* Dark Mode - Reddit Style */
+[data-theme="dark"] {
+    --background: #0b1416;
+    --surface: #0b1416;
+    --surface-hover: #131f23;
+    --surface-active: #1a282d;
+    --border: #343536;
+
+    --text-primary: #d7dadc;
+    --text-secondary: #818384;
+    --text-tertiary: #5f6163;
+
+    --primary: #5c97ff;
+    /* Lighter blue for dark mode */
+}
+
+/* ============================================
+   RESET & BASE STYLES
+   ============================================ */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* Clean thin borders */
+    border-color: var(--border);
+}
+
+html {
+    scroll-behavior: smooth;
+    overflow-y: scroll;
+    /* Prevent layout shift */
+}
+
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    font-size: var(--font-base);
+    line-height: 1.5;
+    color: var(--text-primary);
+    background-color: var(--background);
+    transition: background-color var(--transition-fast), color var(--transition-fast);
+}
+
+/* Slim Scrollbar */
+::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--text-tertiary);
+    /* using tertiary text color for subtle scrollbar */
+    border-radius: var(--radius-full);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--text-secondary);
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button {
+    border: none;
+    background: none;
+    cursor: pointer;
+    color: inherit;
+    font-family: inherit;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+/* ============================================
+   ABOUT HEADSHOT
+   ============================================ */
+.about-container {
+    display: grid;
+    grid-template-columns: 280px 1fr;
+    gap: var(--space-2xl);
+    align-items: start;
+}
+
+.about-headshot-wrapper {
+    position: relative;
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    border: 1px solid var(--border);
+    box-shadow: var(--shadow-lg);
+}
+
+.about-headshot {
+    width: 100%;
+    height: auto;
+    display: block;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+.about-headshot:hover {
+    transform: scale(1.05);
+}
+
+@media (max-width: 900px) {
+    .about-container {
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+
+    .about-headshot-wrapper {
+        width: 250px;
+        margin-bottom: var(--space-xl);
+    }
+
+    .about-text {
+        text-align: center;
+    }
+}
+
+/* ============================================
+   HEADER - Compact & aligned top
+   ============================================ */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: var(--header-height);
+    background: var(--surface);
+    border-bottom: 1px solid var(--border);
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+}
+
+.header-content {
+    width: 100%;
+    padding: 0 var(--space-lg);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo-section {
+    display: flex;
+    align-items: center;
+    gap: var(--space-sm);
+}
+
+.logo-icon {
+    width: 32px;
+    height: 32px;
+    border-radius: var(--radius-full);
+    object-fit: cover;
+}
+
+.logo-text {
+    font-size: var(--font-lg);
+    font-weight: 600;
+    color: var(--text-primary);
+    letter-spacing: -0.02em;
+}
+
+.header-actions {
+    display: flex;
+    align-items: center;
+    gap: var(--space-sm);
+}
+
+.theme-toggle {
+    width: 32px;
+    height: 32px;
+    border-radius: var(--radius-sm);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-secondary);
+    transition: background var(--transition-fast);
+}
+
+.theme-toggle:hover {
+    background: var(--surface-hover);
+    color: var(--text-primary);
+}
+
+.mobile-menu-toggle {
+    display: none;
+    /* Shown in media query */
+    padding: 8px;
+}
+
+/* ============================================
+   SIDEBAR - Narrow Column
+   ============================================ */
+.sidebar {
+    position: fixed;
+    left: 0;
+    top: var(--header-height);
+    bottom: 0;
+    width: var(--sidebar-width);
+    background: var(--surface);
+    border-right: 1px solid var(--border);
+    padding: var(--space-md) var(--space-sm);
+    /* Tighter padding */
+    display: flex;
+    flex-direction: column;
+    overflow-y: auto;
+    z-index: 900;
+}
+
+.nav-links {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    /* Very tight gap like file explorers/lists */
+}
+
+.nav-link {
+    display: flex;
+    align-items: center;
+    gap: var(--space-md);
+    padding: 8px var(--space-md);
+    border-radius: var(--radius-sm);
+    color: var(--text-secondary);
+    font-weight: 500;
+    font-size: var(--font-base);
+    transition: background var(--transition-fast);
+}
+
+.nav-link:hover {
+    background: var(--surface-hover);
+    color: var(--text-primary);
+}
+
+.nav-link.active {
+    background: var(--surface-active);
+    color: var(--primary);
+    font-weight: 600;
+}
+
+.nav-link i {
+    width: 20px;
+    text-align: center;
+    font-size: 16px;
+}
+
+.social-links {
+    margin-top: auto;
+    padding-top: var(--space-md);
+    border-top: 1px solid var(--border);
+    display: flex;
+    justify-content: space-around;
+}
+
+.social-link {
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-secondary);
+    border-radius: var(--radius-full);
+}
+
+.social-link:hover {
+    background: var(--surface-hover);
+    color: var(--accent);
+    /* Reddit orange on hover */
+}
+
+/* ============================================
+   MAIN CONTENT - No wasted space
+   ============================================ */
+/* ============================================
+   MAIN CONTENT - No wasted space
+   ============================================ */
+.main-content {
+    margin-left: var(--sidebar-width);
+    margin-top: var(--header-height);
+    padding: var(--space-lg);
+    max-width: 1000px;
+}
+
+.section {
+    display: none;
+    /* Tab behavior: hidden by default */
+    opacity: 0;
+    transform: translateY(10px);
+    transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+.section.active {
+    display: block;
+    /* Tab behavior: show active */
+    opacity: 1;
+    transform: translateY(0);
+    animation: fadeIn 0.4s ease forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.section-header {
+    border-bottom: 1px solid var(--border);
+    margin-bottom: var(--space-lg);
+    padding-bottom: var(--space-xs);
+}
+
+.section-title {
+    font-size: var(--font-xl);
+    font-weight: 600;
+    color: var(--text-primary);
+}
+
+/* ============================================
+   HERO SECTION - Compact
+   ============================================ */
+.hero-section {
+    /* Reduce large hero spacing to fit content higher up */
+    display: flex;
+    align-items: flex-start;
+    gap: var(--space-xl);
+    padding-top: var(--space-xl);
+}
+
+.hero-content {
+    flex: 2;
+}
+
+.hero-subtitle {
+    font-size: var(--font-lg);
+    color: var(--text-secondary);
+    font-weight: 500;
+}
+
+.hero-title {
+    font-size: 40px;
+    /* Smaller than before */
+    margin: var(--space-xs) 0 var(--space-md);
+    color: var(--text-primary);
+    line-height: 1.2;
+}
+
+.hero-description {
+    font-size: var(--font-lg);
+    color: var(--text-secondary);
+    margin-bottom: var(--space-lg);
+    max-width: 600px;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: var(--space-md);
+}
+
+/* Button Styles - Clean & Borders */
+.btn {
+    padding: 8px 16px;
+    font-size: 14px;
+    font-weight: 600;
+    border-radius: 999px;
+    /* Pill shaped like Reddit buttons */
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    transition: background 150ms;
+}
+
+.btn-primary {
+    background: var(--primary);
+    color: white;
+}
+
+.btn-primary:hover {
+    background: var(--primary-hover);
+}
+
+.btn-secondary {
+    border: 1px solid var(--primary);
+    color: var(--primary);
+    background: transparent;
+}
+
+.btn-secondary:hover {
+    background: var(--surface-active);
+}
+
+.hero-visual {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    padding-top: var(--space-xl);
+}
+
+.floating-card {
+    /* Larger visual elements */
+    width: 80px;
+    /* Increased from 60px */
+    height: 80px;
+    /* Increased from 60px */
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: var(--shadow-sm);
+    font-size: 32px;
+    /* Increased from 24px */
+    color: var(--primary);
+    cursor: pointer;
+    text-decoration: none;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    z-index: 10;
+}
+
+.floating-card:hover {
+    transform: scale(1.1) !important;
+    box-shadow: var(--shadow-md);
+    border-color: var(--primary);
+}
+
+/* ============================================
+   GRIDS (Projects, Courses)
+   ============================================ */
+.projects-grid,
+.courses-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: var(--space-md);
+}
+
+/* Shared Card Style - Thin Borders */
+.project-card,
+.course-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    padding: var(--space-md);
+    transition: border-color 0.2s;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    /* Ensure uniform height in grid */
+}
+
+.project-card:hover,
+.course-card:hover {
+    border-color: var(--text-tertiary);
+    background: var(--surface-hover);
+}
+
+.project-header,
+.course-header {
+    display: flex;
+    align-items: center;
+    gap: var(--space-sm);
+    margin-bottom: var(--space-sm);
+}
+
+.project-header i,
+.course-header i {
+    color: var(--primary);
+    font-size: 18px;
+}
+
+.project-title,
+.course-header h3 {
+    font-size: var(--font-lg);
+    font-weight: 600;
+}
+
+.project-description,
+.course-description {
+    font-size: 13px;
+    color: var(--text-secondary);
+    margin-bottom: var(--space-md);
+    line-height: 1.4;
+}
+
+.project-tags,
+.course-topics {
+    display: flex;
+    gap: 4px;
+    flex-wrap: wrap;
+    margin-bottom: var(--space-md);
+    /* Add spacing below tags */
+}
+
+.project-links {
+    margin-top: auto;
+    /* Push to bottom */
+    display: flex;
+    gap: var(--space-sm);
+    padding-top: var(--space-sm);
+}
+
+.project-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    padding: 8px 16px;
+    border-radius: var(--radius-full);
+    /* Pill shape like other buttons */
+    font-size: 13px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.2s ease;
+    flex: 1;
+    /* Equal width buttons */
+}
+
+/* First button (usually Live Demo) - Primary Color */
+.project-link:first-child {
+    background-color: var(--primary);
+    color: white;
+    border: 1px solid var(--primary);
+}
+
+.project-link:first-child:hover {
+    background-color: var(--primary-hover);
+    border-color: var(--primary-hover);
+}
+
+/* Second button (usually Code) - Different Color (e.g. Dark/Secondary) */
+.project-link:nth-child(2) {
+    background-color: transparent;
+    color: var(--text-primary);
+    border: 1px solid var(--border);
+}
+
+.project-link:nth-child(2):hover {
+    background-color: var(--surface-active);
+    border-color: var(--text-tertiary);
+}
+
+/* If there is only one button (View Code), make it look prominent but maybe standard style */
+.project-link:only-child {
+    background-color: transparent;
+    color: var(--primary);
+    border: 1px solid var(--primary);
+}
+
+.project-link:only-child:hover {
+    background-color: var(--primary);
+    color: white;
+}
+
+.tag,
+.topic {
+    font-size: 11px;
+    background: var(--surface-active);
+    color: var(--primary);
+    padding: 2px 8px;
+    border-radius: 12px;
+}
+
+/* ============================================
+   SKILLS - Compact
+   ============================================ */
+.skills-container {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-lg);
+}
+
+.skill-category {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    padding: var(--space-lg);
+}
+
+.category-title {
+    font-size: var(--font-lg);
+    margin-bottom: var(--space-md);
+    display: flex;
+    align-items: center;
+    gap: var(--space-sm);
+    color: var(--text-primary);
+}
+
+.skill-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: var(--space-md) var(--space-xl);
+}
+
+.skill-item {
+    margin-bottom: 0;
+}
+
+.skill-name {
+    display: block;
+    margin-bottom: 4px;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.skill-bar {
+    height: 6px;
+    background: var(--surface-active);
+    border-radius: var(--radius-full);
+    overflow: hidden;
+}
+
+.skill-progress {
+    height: 100%;
+    background: var(--primary);
+    width: var(--progress);
+}
+
+/* ============================================
+   CONTACT
+   ============================================ */
+.contact-content {
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    padding: var(--space-xl);
+    background: var(--surface);
+}
+
+.contact-methods {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: var(--space-lg);
+    margin-top: var(--space-lg);
+}
+
+.contact-method {
+    display: flex;
+    align-items: center;
+    gap: var(--space-md);
+    padding: var(--space-md);
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    transition: transform 0.1s;
+}
+
+.contact-method:hover {
+    background: var(--surface-hover);
+    border-color: var(--text-tertiary);
+}
+
+/* ============================================
+   MODAL
+   ============================================ */
+.modal {
+    display: none;
+    position: fixed;
+    inset: 0;
+    z-index: 2000;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.6);
+}
+
+.modal.active {
+    display: flex;
+}
+
+.modal-content {
+    background: var(--surface);
+    width: 90%;
+    max-width: 800px;
+    height: 85vh;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+}
+
+.modal-header {
+    padding: var(--space-md) var(--space-lg);
+    border-bottom: 1px solid var(--border);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.resume-viewer {
+    width: 100%;
+    flex: 1;
+    border: none;
+}
+
+/* ============================================
+   RESPONSIVE
+   ============================================ */
+@media (max-width: 768px) {
+    .sidebar {
+        transform: translateX(-100%);
+        width: 240px;
+        transition: transform 0.2s;
+    }
+
+    .sidebar.active {
+        transform: translateX(0);
+    }
+
+    .mobile-menu-toggle {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+    }
+
+    .mobile-menu-toggle span {
+        width: 20px;
+        height: 2px;
+        background: var(--text-primary);
+    }
+
+    .main-content {
+        margin-left: 0;
+        padding: var(--space-md);
+    }
+
+    .hero-section {
+        flex-direction: column;
+    }
+
+    .hero-visual {
+        display: none;
+    }
+}
