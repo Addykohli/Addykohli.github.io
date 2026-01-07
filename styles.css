@@ -746,11 +746,22 @@ img {
 .modal-content {
     background: var(--surface);
     width: 90%;
-    max-width: 800px;
-    height: 85vh;
+    max-width: 900px;
+    /* Slightly wider */
+    height: 90vh;
+    /* Taller */
     border-radius: 8px;
     display: flex;
     flex-direction: column;
+}
+
+.modal-body {
+    flex: 1;
+    display: flex;
+    overflow: hidden;
+    /* Prevent spill */
+    background: #525659;
+    /* Standard PDF viewer background color */
 }
 
 .modal-header {
@@ -763,8 +774,9 @@ img {
 
 .resume-viewer {
     width: 100%;
-    flex: 1;
+    height: 100%;
     border: none;
+    display: block;
 }
 
 /* ============================================
@@ -785,6 +797,8 @@ img {
         display: flex;
         flex-direction: column;
         gap: 4px;
+        margin-right: var(--space-md);
+        /* Space between toggle and logo */
     }
 
     .mobile-menu-toggle span {
