@@ -292,11 +292,19 @@ function initParallax() {
 // ============================================
 function initTypingEffect() {
     const heroDescription = document.querySelector('.hero-description');
+
+    // If description has HTML (bold, icons), use fade-in to preserve formatting
+    if (heroDescription.children.length > 0) {
+        heroDescription.style.opacity = '0';
+        heroDescription.style.animation = 'fadeIn 0.8s ease forwards 0.3s';
+        return;
+    }
+
     const text = heroDescription.textContent;
     heroDescription.textContent = '';
 
     let index = 0;
-    const speed = 50;
+    const speed = 20; // Increased speed
 
     function typeWriter() {
         if (index < text.length) {
