@@ -34,11 +34,9 @@ function updateThemeIcon() {
     if (state.theme === 'dark') {
         icon.classList.remove('fa-moon');
         icon.classList.add('fa-sun');
-        if (logo) logo.src = 'public/icon_white.png';
     } else {
         icon.classList.remove('fa-sun');
         icon.classList.add('fa-moon');
-        if (logo) logo.src = 'public/icon.png';
     }
 }
 

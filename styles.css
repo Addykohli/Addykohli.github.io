@@ -226,6 +226,11 @@ img {
     height: 32px;
     border-radius: var(--radius-full);
     object-fit: cover;
+    transition: background-color 0.3s ease;
+}
+
+[data-theme="dark"] .logo-icon {
+    background-color: #ffffff;
 }
 
 .logo-text {
