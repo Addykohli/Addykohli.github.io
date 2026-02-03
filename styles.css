@@ -459,6 +459,23 @@ img {
     color: white;
 }
 
+.btn-icon {
+    padding: 0;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    justify-content: center;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    color: var(--text-primary);
+}
+
+.btn-icon:hover {
+    background: var(--bg-secondary);
+    border-color: var(--primary);
+    color: var(--primary);
+}
+
 .btn-primary:hover {
     background: var(--primary-hover);
 }
