@@ -20,6 +20,13 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
     <link rel="stylesheet" href="styles.css">
+    <script>
+        // Immediately set theme to avoid flash of light mode
+        (function () {
+            const savedTheme = localStorage.getItem('theme') || 'dark';
+            document.documentElement.setAttribute('data-theme', savedTheme);
+        })();
+    </script>
 </head>
 
 <body>
@@ -528,7 +535,7 @@
                     <p class="project-description">
                         <strong>Bachelor of Science in Computer Science</strong><br>
                         <strong>Minor in Mathematics</strong><br>
-                        2023 - Present<br>
+                        2023 - 2025<br>
                         Dean's List Honoree x3
                     </p>
                 </div>

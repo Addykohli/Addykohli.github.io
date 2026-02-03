@@ -3,7 +3,7 @@
 // ============================================
 const state = {
     currentSection: 'home',
-    theme: localStorage.getItem('theme') || 'light',
+    theme: localStorage.getItem('theme') || 'dark',
     isMobileMenuOpen: false
 };
 
