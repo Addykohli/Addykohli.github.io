@@ -110,14 +110,17 @@
                         Open to custom development requests.
                     </p>
                     <div class="hero-buttons">
-                        <button class="btn btn-primary" id="viewResumeBtn">
-                            <i class="fas fa-file-pdf"></i>
-                            View Resume
-                        </button>
-                        <a href="public/Resume.pdf" download="Addhyan_Kohli_Resume.pdf" class="btn btn-icon"
-                            aria-label="Download Resume" title="Download Resume">
-                            <i class="fas fa-download"></i>
-                        </a>
+                        <div class="btn-group">
+                            <button class="btn btn-primary" id="viewResumeBtn">
+                                <i class="fas fa-file-pdf"></i>
+                                View Resume
+                            </button>
+                            <div class="separator"></div>
+                            <a href="public/Resume.pdf" download="Addhyan_Kohli_Resume.pdf"
+                                class="btn btn-primary btn-icon" aria-label="Download Resume" title="Download Resume">
+                                <i class="fas fa-download"></i>
+                            </a>
+                        </div>
                         <a href="#contact" class="btn btn-secondary">
                             <i class="fas fa-paper-plane"></i>
                             Get In Touch
@@ -665,15 +668,9 @@
             <button class="modal-close" id="modalClose" aria-label="Close modal">
                 <i class="fas fa-times"></i>
             </button>
-            <div class="modal-header">
-                <h2>Resume</h2>
-                <a href="public/Resume.pdf" download class="btn btn-primary btn-sm">
-                    <i class="fas fa-download"></i>
-                    Download PDF
-                </a>
-            </div>
+            <!-- Header removed for cleaner view -->
             <div class="modal-body">
-                <iframe src="public/Resume.pdf" class="resume-viewer"></iframe>
+                <iframe src="public/Resume.pdf#toolbar=0&navpanes=0&scrollbar=0" class="resume-viewer"></iframe>
             </div>
         </div>
     </div>
